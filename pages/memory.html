@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <title>Tarotkarten Memory</title>
+
+    <link rel="stylesheet" href="../css/memorydesign.css">
+
+</head>
+<body>
+
+    <div class="containeroben">
+
+        <div class="textoben">
+
+            <button class="button">
+            <a href="../pages/tarot.html"> Zurück.</a>
+            </button>
+
+        </div>
+    </div>
+        
+    <div class="container">
+
+        <div id="maus">
+        </div>
+
+        <header>
+            <h1 class="ueberschrift" >Tarotkarten Memory.</h1>
+        </header>
+
+        <section class="zeitundzüge">
+
+        	<span class="züge">0</span> 
+            <h2 id="kartenzug">Kartenzüge</h2>
+
+            <div class="zeit">
+            </div>
+
+            <div class="neustart" onclick=spielStart()>
+            </div>
+
+        </section>
+
+        <ul class="deck" id="tarotkartendeck">
+
+            <li class="tarotkarte"><img src="../img/rad.jpg"></li>
+            <li class="tarotkarte"><img src="../img/rad.jpg"></li>
+
+            <li class="tarotkarte" type="gehaengte"><img src="../img/gehaengte.jpg"></li>
+            <li class="tarotkarte" type="gehaengte"><img src="../img/gehaengte.jpg"></li>
+
+            <li class="tarotkarte" type="herscherr"><img src="../img/herscherin.jpg"></li>
+            <li class="tarotkarte" type="herscherr"><img src="../img/herscherin.jpg"></li>
+
+            <li class="tarotkarte" type="narr"><img src="../img/narr.jpg"></li>
+            <li class="tarotkarte" type="narr"><img src="../img/narr.jpg"></li>
+
+            <li class="tarotkarte" type="sonne"><img src="../img/sonne.jpg"></li>
+            <li class="tarotkarte" type="sonne"><img src="../img/sonne.jpg"></li>
+
+            <li class="tarotkarte" type="liebe"><img src="../img/liebende.jpg"></li>
+            <li class="tarotkarte" type="liebe"><img src="../img/liebende.jpg"></li>
+
+            <li class="tarotkarte" type="turm"><img src="../img/turm.jpg"></li>
+            <li class="tarotkarte" type="turm"><img src="../img/turm.jpg"></li>
+
+            <li class="tarotkarte" type="hirophant" ><img src="../img/hierophant.jpg"></li>
+            <li class="tarotkarte öffnen zeigen" type="hirophant"><img src="../img/hierophant.jpg"></li>
+
+            <li class="tarotkarte" type="gerechtigkeit"><img src="../img/gerechtigkeit.jpg"></li>
+            <li class="tarotkarte" type="gerechtigkeit"><img src="../img/gerechtigkeit.jpg"></li>
+
+            <li class="tarotkarte" type="teufel"><img src="../img/teufel.jpg"></li>
+            <li class="tarotkarte" type="teufel"> <img src="../img/teufel.jpg"></li>
+
+            <li class="tarotkarte" type="mond"><img src="../img/mond.jpg"></li>
+            <li class="tarotkarte" type="mond"><img src="../img/mond.jpg"></li>
+
+            <li class="tarotkarte" type="hohenpristerin"><img src="../img/hohenpristerin.jpg"></li>
+            <li class="tarotkarte" type="hohenpristerin"><img src="../img/hohenpristerin.jpg" ></li>
+        </ul>
+
+        <div id="popup1" class="top"><div class="popup">
+
+                <a class="schließen" href="../pages/memory.html" >×</a>
+
+                <div class="inhalteins">
+                    Glückwunsch, du hast alle Paare gefunden.
+                    <p>Du hast <span id=benötigteZeit> </span> benötigt. </p>
+                </div>
+
+                <div class="inhaltzwei">
+                    <p>Du hast <span id=letzerzug> </span> Kartenzüge benötigt. </p>
+                </div>
+
+                <button id="neuesspiel" onclick=nochmalSpielen()>
+                    Nochmal spielen? </a>
+                </button>
+
+        </div></div>
+
+    </div>
+
+    <script src="../js/memory.js"></script>
+</body>
+</html>

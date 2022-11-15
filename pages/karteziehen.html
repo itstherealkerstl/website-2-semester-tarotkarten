@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/designlegen.css">
+    
+    <script src="../js/kartenlegen.js"></script>
+
+    <title>Kartenlegen</title>
+
+</head>
+<body>
+
+<div class="containeroben">
+
+  <div class="textoben">
+
+    <button class="button">
+    <a href="../pages/tarot.html">Zurück.</a>
+    </button>
+
+  </div>
+
+</div>
+
+<div id="container">
+
+  <div id="alles">
+    <div class="box">
+      <div class="imgBx">
+        <img id="image_shower">
+      </div>
+    </div>
+  </div>
+
+  <p id="textkarten"></p>
+
+  <div id="button_container">
+    <button onclick="zufälligeKarte()">Klicke um eine Karte zu ziehen.<i class="fas fa-random"></i> </button>
+  </div>
+
+  </div>
+
+<script type="text/javascript" src="../js/tilt.js"></script>
+<script type="text/javascript">
+
+  VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 25,
+    speed: 400
+  });
+
+</script>
+
+</body>
+</html>

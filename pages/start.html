@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/design.css">
+    
+    <title>Grafikkreation - Home</title>
+
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body onscroll="mitsroll()" onload="popupeinblenden()" >
+
+    <audio id="myAudio">
+        <source src="js/batman.mp3" type="audio/mpeg">
+      </audio>
+
+    <div id="popup"  >
+   
+        <p class="poptext">Gefällt dir dieses Pop up?</p>
+        <p class="poptext" id="nummer"></p>
+        <button class="popbutton"  id="popbuttonjump" onmouseover="jump()">Jetzt sofort Kauf abschließen!</button>
+        <button id="zumachen" onclick="popupschliessen()">Schließen</button>
+    </div>
+
+
+    <div class="container">
+        <nav>
+            <div class="navigationok">
+
+                <img class="logonav" src="../svg/logo_beige.svg" width="100" alt="k/k">
+
+                <div class="dreiecknav">
+                    <img src="../svg/dreieck_orange.svg" alt="Dreick orange">
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="../pages/start.html">HOME</a></div>
+                    <div class="dropdown-content">
+                        <div class="dreieck">
+                            <img src="../svg/dreieck_orange.svg" alt="Dreick orange">
+                        </div>
+                        <a href="../pages/start.html">DIGITALE KUNST</a>
+                        <a href="../pages/start.html">ILLUSTRATION</a>
+                        <a href="../pages/start.html">KONTAKT</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="../pages/shop.html">SHOP</a></div>
+                    <div class="dropdown-contentb">
+                        <div class="dreieck2">
+                            <img src="../svg/dreieck_orange.svg" alt="Dreick orange">
+                        </div>
+                        <a href="../pages/shop.html">TASCHEN</a>
+                        <div class="dropdown-contentnochmal">
+                            <a href="../pages/shop.html">MARILLENTASCHE</a>
+                            <a href="../pages/shop.html">BIRNENTASCHE</a>
+                            <a href="../pages/shop.html">APFELTASCHE</a>
+                        </div>
+                        <a href="../pages/shop.html">DRUCKE</a>
+                        <div class="dropdown-contentnochmal2">
+                            <a href="../pages/shop.html"> BLUME</a>
+                            <a href="../pages/shop.html">SCHMETTERLING</a>
+                            <a href="../pages/shop.html">HOCHLANDRIND</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="../pages/galerie.html">GALERIE</a></div>
+                    <div class="dropdown-contentc">
+                        <div class="dreieck3">
+                            <img src="../svg/dreieck_orange.svg" alt="Dreick orange">
+                        </div>
+                        <a href="../pages/galerie.html">INSPIRATION</a>
+                        <a href="../pages/galerie.html">FOTOGRAFIE</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="logowrap">
+            <div class="logo"></div>
+        </div>
+
+        <div class="boxeins">
+            <div class="boxone">
+                <div class="blumeeinsrechtsoben">
+                    <img src="../img/homeblumerechts.png" id="blumerechts" alt="blumerechts">
+                </div>
+            </div>
+
+                <h1>DESIGN PRÄGT UNSERE WELT.</h1>
+            <h2>Starke Zeichen und ein unverwechselbarer,</h2>
+            <h2>   grafischer Auftritt ist heuzutage unverzichtbar.</h2>
+        </div>
+
+        <div class="boxzweilinks">
+            <img src="../img/landschaftbild.jpg" id="landschaftbild" alt="Landschaft">
+            <div class="bildbeschreibungeins">
+                <a href="../pages/galerie.html">
+                        <h4>DIGITALE KUNST</h4>
+                    </a>
+            </div>
+        </div>
+
+        <div class="boxzweirechts">
+            <img src="../svg/logo_gruen.svg" id="logo_gruenone" alt="k/k">
+            <h3>Innere Werte nach außen kommunizieren – darum geht es.</h3>
+            <h3>Nur so kann Qualität und Einzigartigkeit vermittelt werden.</h3>
+        </div>
+
+        <div class="boxdreilinks">
+
+            <div class="dreieckbeigeok"><img src="../svg/dreieck_beige.svg" alt="Dreieckbeige"></div>
+
+            <img src="../svg/logo_gruen.svg" id="logo_gruentwo" alt="k/k">
+            <h3>Künstlerisches Arbeiten 
+                mit Medien OB Illustration, 
+                Grafik oder Digitaler Kunst.</h3>
+
+             <h3> Ein unverkennbares Design 
+                 von Bild und Text ist einmalig.</h3>
+
+            <div class="boxtwo">
+                <div class="blumezweilinksunten">
+                    <img src="../img/homeblumelinks.png" id="homeblumelinks" alt="blumelinks">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="boxdreirechts">
+            <img src="../img/kulibild.jpg" id="kulibild" alt="Landschaft">
+            <div class="bildbeschreibungzwei"><a href="../pages/galerie.html">
+                        <h4>ILLUSTRATION</h4>
+                    </a></div>
+        </div>
+
+        <div class="boxvier">
+
+
+            <div class="boxvierlinks"><img id="kreation" src="../svg/grafikkreation_gruen.svg" alt="logo">
+                <h3>Auf Wunsch passende Illustrationen. einzigartige Entwürfe mit Liebe zum Detail.</h3>
+            </div>
+            <hr class="hrdesign">
+            <div class="boxviermitte">
+                <img src="../svg/schraeg.svg" alt="schraeg">
+
+            </div>
+
+            <div class="boxvierrechts">
+                <img src="../svg/icon_email.svg" id="iconemail" alt="logo">
+                <h6 id="email">ANFRAGEN GERNE PER E-MAIL!</h6>
+                <h5 id="follow"> Follow me!</h5>
+
+                <img src="../svg/icon_insta.svg" id="iconinsta" alt="logo">
+                <img src="../svg/icon_fb.svg" id="iconfb" alt="logo">
+            </div>
+        </div>
+
+
+        <footer>
+            <h6>IMPRESSUM HIER KÖNNTE IHRE WERBUNG STEHEN!</h6>
+        </footer>
+
+
+        <div class="dreiecklogofooter">
+            <img src="../svg/dreieck_gruen_logo.svg" id="dreieck_gruen_logo" alt="Dreieck grün mit Logo">
+        </div>
+    </div>
+</body>
+
+</html>

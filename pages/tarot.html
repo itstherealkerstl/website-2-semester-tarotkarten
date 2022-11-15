@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/tarotdesign.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <title>Tarotkarten</title>
+
+</head>
+
+<body>
+
+    <div id="maus"></div>
+    <h1 class="ueberschrift">Tarotkarten.</h1>
+
+    <div class="boxeins">
+
+        <button class="button">
+          <a href="../pages/memory.html"> Memory spielen.</a>
+        </button>
+
+        <button class="button">
+            <a href="../pages/karteziehen.html">Karte ziehen.</a>
+          </button>
+
+
+      </div>
+    <div class="slideshow">
+        <div class="sliderbox flex">
+
+            <div class="slide flex">
+                <div class="sliderbild"><img id="rad" src="../img/radeins.svg" ><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel" >das Rad des Schicksals.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Die Karte symbolisiert das Eingebundensein in das Wirken des Lebens, ins Schicksalsrad und zeigt uns, dass keine Situation ewig herrscht.
+                    </div>
+                </div>	
+            </div>	
+            <div class="slide flex">
+                <div class="sliderbild"><img id="gehaengte" src="../img/gehaengt.svg" style="height: 130%;"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel"  id="slideshowtitel3">der gehängte.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel"> Heute gilt die Karte als Symbol der Einweihung und der dazu notwendigen 
+                        Geduld und die Fähigkeit, die Welt aus einem anderen Blickwinkel zu betrachten.</div>
+                </div>	
+            </div>
+                <div class="slide flex">
+                <div class="sliderbild"><img id="gehaengte" src="../img/narrok.svg"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel" id="slideshowtitel2">der Narr.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Der Narr symbolisiert die jugendliche Unwissenheit und Unbekümmertheit, 
+                        das sorglose Ins-Leben-Hineintreten. </div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img  id="gehaengte" src="../img/diehohe.svg" style="height: 110%;"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel"  id="slideshowtitel2">DIE Hohepriesterin.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Die Offenlegung eines schlicht-alltägliches Geheimnisses oder auch die
+                        Verkörperung von Intuition und Weisheit.</div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img  id="gehaengte" src="../img/herschetrin.svg" style="height:110%"><div class="overlay"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel">DIE HERSCHERIN.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel"> Heute gilt die Karte als Symbol der Einweihung und der dazu notwendigen Geduld 
+                        und die Fähigkeit, die Welt aus einem anderen Blickwinkel zu betrachten. </div>
+                </div>	
+            </div>
+            <div class="slide flex">
+                <div class="sliderbild"><img id="sonne" src="../img/sonne.svg"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    
+                    <div class="slideshowtitel">DIE SONNE.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Die Sonne symbolisiert die Hoffnung, den Idealismus, das Streben nach „höheren“ Werten. Sie steht aber auch 
+                       für geistige Klarheit, also nicht für Illusionen und Utopien.</div>                    
+                </div>	
+            </div>
+            <div class="slide flex">
+                <div class="sliderbild"><img id="teufel" src="../img/hirophat.svg" style="height:110%"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel" id="slideshowtitel2">der Hierophant.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel"> Der Hierophant repräsentiert den Willen Gottes und dessen Auslegung auf der Erde.</div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img id="mond" src="../img/mond.svg" style="height:140%"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel">der MOND.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel"> Heute gilt die Karte als Symbol der Einweihung und der dazu notwendigen Geduld
+                        und die Fähigkeit, die Welt aus einem anderen Blickwinkel zu betrachten.</div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img id="teufel2" src="../img/teufel.svg" style="height:150%"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel">der TEUFEL.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Der Teufel symbolisiert das Totale und Widerspruchslose, seine Thematik ist die 
+                        Macht und die Ohnmacht. Auf dem Weg des Helden symbolisiert sie die Gewissensprüfung.</div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img id="teufel" src="../img/turm.svg" style="height:110%"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel">der TURM.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Der Turm symbolisiert das Gefängnis der Gedankenkonstrukte, Weltbilder usw.,
+                        in das wir Menschen uns selber einspinnen.  </div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img id="gehaengte" src="../img/gerechtigkeit.svg" style="height:100%"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel" id="slideshowtitel2">Die Gerechtigkeit.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Die Karte symbolisiert Fairness, Verantwortlichkeit, Regelung von öffentlichen 
+                        Angelegenheiten, Gerechtigkeit und Richterspruch</div>
+                </div>	
+            </div>
+
+            <div class="slide flex">
+                <div class="sliderbild"><img id="gehaengte2" src="../img/lebenden.svg" style="height:130%"><div class="grauerbildhover"></div></div>
+                <div class="slideshowinhalt">
+                    <div class="slideshowtitel">DIE Liebenden.</div>
+                    <div id="slideshowlauftext" class="slideshowtitel">Die Karte repräsentiert Beziehungen und Optionen. Wird auch in einigen Decks 
+                        mit der Karte Die Zwillinge in Verbindung gebracht.  </div>
+                </div>	
+            </div>
+        </div> 
+
+
+        <div class="pfeile">
+        <a class="pfeil navigationpfeile vorheriges"></a>
+        <a class="pfeil navigationpfeile naechstes"></a>
+        </div>
+        </div>
+
+
+<script src="../js/tarot.js" defer></script>
+<script src="../js/restzwei.js" defer></script>
+
+</body>
+</html>

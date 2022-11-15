@@ -1,0 +1,147 @@
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin:0;
+padding: 0;
+overflow: hidden;
+
+}
+
+.boxalles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+}
+
+#eins {
+    font-size: 1em;
+    text-transform: uppercase; 
+    color: #E9AF16; 
+        text-align: center;
+    text-decoration: none;
+
+
+}
+
+#zwei {
+    color:  #456A3B;
+
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase; 
+    text-decoration: none;
+
+}
+
+.button:focus {
+    outline: none;
+  }
+  
+  .buttoneins {
+    background-color: #1B1B17; 
+      width: 300px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 4px solid #E9AF16;
+    cursor: pointer;
+  }
+  
+  .buttonzwei {
+    background-color: #F1D006;
+      width: 300px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 4px solid #E9AF16;
+    cursor: pointer;
+  }
+  
+
+  .buttoneins::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    opacity: 0;
+    color: #E9AF16;
+    z-index: -1;
+  }
+  
+
+  
+  .buttoneins:hover {
+    border: 4px solid #E9AF16;
+    background-color: rgba(27, 27, 27, 0.5);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+
+
+  .buttonzwei::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    opacity: 0;
+    color: #E9AF16;
+    z-index: -1;
+  }
+
+  
+  .buttonzwei:hover {
+    border: 4px solid #E9AF16;
+    background-color: rgba(233, 175, 22, 0.3);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+
+  #maus
+{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #E9AF16;
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+#maus 
+{
+  width: 50px;
+  height: 50px;
+  border: 2px dashed #E9AF16;
+  animation: animationmaus 5s linear infinite;
+}
+
+@keyframes animationmaus
+{
+  0% 
+  {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% 
+  {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
